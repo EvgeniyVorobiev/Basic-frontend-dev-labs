@@ -34,7 +34,7 @@ div.header {
     align-items: center;
     padding-top: 150px;
 }
-div.header a.text{
+div.header p.text{
     text-decoration: none;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
@@ -56,6 +56,7 @@ div.header button.button {
     font-size: 26px;
     width: 295px;
     height: 71px;
+    border: 0px;
     box-shadow: 0px 4px #eb7e4b4e;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -81,6 +82,7 @@ section.team hr.line{
     width: 87px;
     background-color: #c8d9e5;
     height: 4px;
+    border: 0px;
 }
 section.team a.smallteam{
     display: grid;
@@ -99,27 +101,71 @@ section.team div.team{
 }
 
 section.team div{
-    margin-left: 162px;
-}
-
-section.team div.team a{
     display: flex;
     text-align: center;
     margin-left: auto;
     margin-left: auto;
+    margin-left: 160px;
+}
+
+section.team div.team a{
+    
     margin-left: 80px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background: #878787;
 }
-section.team div.name {
-    margin-left: 162;
+section.team div.name{
+    font-size: 24px;
+    margin-left: 240px;
 }
-section.team div.name a{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-left: auto;
-    margin-left: 100px;
+section.team div.name p.name2{margin-left: 130px;}
+section.team div.name p.name3{margin-left: 140px;}
+section.team div.name p.name4{margin-left: 120px;}
+
+section.team div.spec{
+    color: #30bae7;
+    font-size:16;
+    margin-top: -40px;
+    margin-left: 255px;
+}
+section.team div.spec p.spec2{margin-left:160px;}
+section.team div.spec p.spec3{margin-left:170px;}
+section.team div.spec p.spec4{margin-left:180px;}
+
+section.team div.text{
+    color: #535e75;
+    font-weight: 300;
+    font-size:16;
+    margin-top: -20px;
+    margin-left: 240px;
+}
+section.team div.text p.text2{margin-left: 90px;}
+section.team div.text p.text3{margin-left: 80px;}
+section.team div.text p.text4{margin-left: 100px;}
+
+section.team div.icons img.fb1{margin-left: 90px;}
+section.team div.icons img.twitter1{margin-left: 10px;}
+section.team div.icons img.LinkedIn1{margin-left: 10px;}
+section.team div.icons img.mail1{margin-left: 10px;}
+
+section.team div.icons img.twitter2{margin-left: 150px;}
+section.team div.icons img.LinkedIn2{margin-left: 10px;}
+section.team div.icons img.mail2{margin-left: 10px;}
+
+section.team div.icons img.fb3{margin-left: 140px;}
+section.team div.icons img.twitter3{margin-left: 10px;}
+section.team div.icons img.LinkedIn3{margin-left: 10px;}
+section.team div.icons img.mail3{margin-left: 10px;}
+
+section.team div.icons img.fb4{margin-left: 150px;}
+section.team div.icons img.twitter4{margin-left: 10px;}
+section.team div.icons img.mail4{margin-left: 10px;}
+
+section.protofooter {
+background-color: #3c5499;
+background-size: cover;
+height: 820px;
+color: #fff;
 }
