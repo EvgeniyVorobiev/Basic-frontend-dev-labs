@@ -19,16 +19,30 @@ div.menu {
     padding-top: 55px;
 }
 
-div.menu a {
+div.menu button {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
     font-family: 'Titillium Web', sans-serif;
     margin-right: 35px;
+    background: none;
+    border: 0;
 }
-div.menu a.home {
+div.menu button.home {
     margin-left: 505px;
+    border: 0;
+    border-radius: 5px;
+    width: 77px;
+    height: 32px;
+    background-color: #643a79;
 }
+div.menu button:hover{
+    
+    background-color: #643a79;
+    border-radius: 5px;
+}
+
+
 div.header {
     display: grid;
     align-items: center;
@@ -62,6 +76,11 @@ div.header button.button {
     border-top-right-radius: 5px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+}
+div.header button:hover{
+    box-shadow: 0;
+    background-color: #db5d23;
+    border-radius: 5px;
 }
 section.team {
     background-color: #e7f1f8;
@@ -173,4 +192,98 @@ background-size: cover;
 height: 820px;
 color: #FFF;
 }
-section.protofooter p{align-items: center;}
+
+section.protofooter p.get{
+margin-top: 120px;
+font-size: 40px;
+font-family: 'Titillium Web', sans-serif;
+}
+
+section.protofooter hr{
+margin-top: -35px;
+width: 87px;
+background-color: #273a71;
+height: 4px;
+border: 0px;
+}
+
+section.protofooter p.adress{
+font-family: 'Titillium Web', sans-serif;
+font-size: 18px;
+}
+
+section.protofooter input.nameinput{
+    background-color: #273a71;
+    border: 0px;
+    height: 50px;
+    width: 400px;
+    color: #fff;
+    border-radius:3px;
+}
+
+section.protofooter input.mailinput{
+    margin-left: 30px;
+    background-color: #273a71;
+    border: 0px;
+    height: 50px;
+    width: 400px;
+    color: #fff;
+    border-radius:3px;
+}
+
+section.protofooter textarea.messageinput{
+    margin-top: 30px;
+    background-color: #273a71;
+    border: 0px;
+    height: 200px;
+    width: 834px;
+    color: #fff;
+    border-radius:3px;
+}
+
+section.protofooter button.send{
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+    text-align: center;
+    background-color: #30bae7;
+    font-family: 'Titillium Web', sans-serif;
+    color:#fff;
+    font-size: 18px;
+    width: 300px;
+    height: 70px;
+    border: 0px;
+    box-shadow: 0px 4px #299ec5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+section.protofooter button.send:hover{
+    box-shadow: 0;
+    background-color: #099bcb;
+    border-radius: 5px;
+}
+
+footer{
+    display: flex;
+    background-color: #344b8e;
+    background-size: cover;
+    height: 110px;
+    padding-top: 70px;
+}
+
+
+footer a.facebook{margin-left: 280px;}
+footer a{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Titillium Web', sans-serif;
+    margin-right: 60px;
+}
+footer a.twitter{color: #30bae7;}
+footer a:hover{color: #30bae7;}
