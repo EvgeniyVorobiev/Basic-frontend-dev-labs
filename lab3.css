@@ -113,11 +113,13 @@ section.team div.team a{
     border-radius: 50%;
     background: #878787;
 }
-
-section.team div.names a{
+section.team div.name {
+    margin-left: 162;
+}
+section.team div.name a{
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-left: auto;
-    margin-left: 112px;
+    margin-left: 100px;
 }
