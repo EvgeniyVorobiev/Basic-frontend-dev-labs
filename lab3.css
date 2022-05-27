@@ -164,8 +164,13 @@ section.team div.icons img.twitter4{margin-left: 10px;}
 section.team div.icons img.mail4{margin-left: 10px;}
 
 section.protofooter {
+display: grid;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
 background-color: #3c5499;
 background-size: cover;
 height: 820px;
-color: #fff;
+color: #FFF;
 }
+section.protofooter p{align-items: center;}
