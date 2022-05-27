@@ -1,4 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,600;0,700;1,400&display=swap"rel="stylesheet');
+body
+{
+padding: 0;
+margin: 0;
+font-family: 'Titillium Web', sans-serif;
+}
 header.header {
-background-color: blueviolet;
+background-color: #87509c;
+background-size: cover;
+height: 745px;
+}
+div.menu img.logo {
+    margin-left: 210px;
+}
+div.menu { 
+    display: flex;
+    align-items: center;
+    padding-top: 55px;
+}
 
+div.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+    margin-right: 35px;
+}
+div.menu a.home {
+    margin-left: 505px;
+}
+div.header {
+    display: grid;
+    align-items: center;
+    padding-top: 150px;
+}
+div.header a.text{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fff;
+    font-size: 42px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.header button.button {
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+    text-align: center;
+    background-color: #eb7d4b;
+    font-family: 'Titillium Web', sans-serif;
+    color:#fff;
+    font-size: 26px;
+    width: 295px;
+    height: 71px;
+    box-shadow: 0px 4px #eb7e4b4e;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+section.team {
+    background-color: #e7f1f8;
+    height: 920px;}
+ section.team a.team{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 42px;
+    color: #3c4761;
+}
+section.team hr.line{
+    margin-top: 20px;
+    width: 87px;
+    background-color: #c8d9e5;
+    height: 4px;
+}
+section.team a.smallteam{
+    display: grid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    color: #3c4761;
+}
+section.team div.team{
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+section.team div{
+    margin-left: 162px;
+}
+
+section.team div.team a{
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-left: auto;
+    margin-left: 80px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #878787;
+}
+
+section.team div.names a{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-left: auto;
+    margin-left: 112px;
 }
