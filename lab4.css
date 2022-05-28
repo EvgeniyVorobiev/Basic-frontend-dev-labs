@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    background-color: rgba(30, 144, 255, 0.5);
+
+    font-family: Roboto;
+}
+
+.menu{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    width: 80%;
+    height: 12%;
+    background-color: white;
+    border-radius: 12px;
+}
+
+div a{
+    text-align: center;
+    color: #0A2541;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 5%;
+}
+
+.menu h1{
+    text-align: left;
+    margin-left: 4%;
+    font-size: 36px;
+    font-weight: 700;
+    margin-right: 32%;
+}
+
+.menu button{
+    width: 10%;
+    height: 50%;
+    background-color: white;
+    border-color: #7372FF;
+    border-radius: 5px;
+    border-style: solid;
+    color: #4443D0;
+    font-weight: 700;
+    margin-right: 2%;
+}
+
+.menu button.signin{
+    background-color: #4443D0;
+    color: white;
+}
+
+h1.make{
+    font-weight: 700;
+    font-size: 64px;
+    padding-top: 15%;
+    margin-left: 10%;
+}
+
+p.text{
+    margin-top: -2%;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 10%;
+}
+
+form{margin-left: 10%;}
+
+.join{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.email{
+    margin-top: -1%;
+    background-color: white;
+    width: 35%;
+    height: 40px;
+    border: 1px solid #2A92F9;
+    border-radius: 10px;
+}
+
+.sign {
+    margin-top: 2%;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border:0;
+    background-color: #4443D0;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
