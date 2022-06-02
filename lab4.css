@@ -11,6 +11,7 @@ body{
     position: fixed;
     display: flex;
     align-items: center;
+    margin-top: 0;
     margin-left: 10%;
     width: 80%;
     height: 12%;
@@ -18,14 +19,6 @@ body{
     border-radius: 12px;
 }
 
- a.menuItem{
-/*visibility: hidden;*/
-display: flex;
-font-size: 16px;
-color: black;
-text-decoration: none;
-margin-left: 70%;
-}
 
 div a{
     text-align: center;
@@ -35,11 +28,13 @@ div a{
     margin-right: 5%;
 }
 
-.home{font-weight: 700;}
+.home{font-weight: 700;
+margin-left: 44%;}
 
 .menu h1{
+    position: fixed;
     text-align: left;
-    margin-left: 4%;
+    margin-left: 1%;
     font-size: 36px;
     font-weight: 700;
     margin-right: 32%;
@@ -105,92 +100,66 @@ form{margin-left: 10%;}
     font-size: 16px;
 }
 
+.burger{
+  visibility: hidden;
+  background: none;
+  position: fixed;
+  border: 0;
+  padding-left: 90%;
+  margin-top: 3%;
+  z-index: 100;
+}
 
-
-/* скрываем чекбокс */
-#menu__toggle {
-    opacity: 0;
-  }
-  /* стилизуем кнопку */
-  .menu__btn {
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center;  /* центрируем содержимое кнопки */
-    position: fixed;
-    margin-left: 75%;
-    margin-top: 4%;
-    top: 20px;
-    left: 20px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 1;
-  }
-  /* добавляем "гамбургер" */
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #616161;
-  }
-  .menu__btn > span::before {
-    content: '';
-    top: -8px;
-  }
-  .menu__btn > span::after {
-    content: '';
-    top: 8px;
-  }
-
-  /* контейнер меню */
-.menu__box {
-    display: block;
-    position: fixed;
+.menu2{
     visibility: hidden;
-    align-items: flex-end;
-    top: 0;
-    left: -100%;
-    width: 300px;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: #ECEFF1;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  }
-  /* элементы меню */
-  .menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  .menu__item:hover {
-    background-color: #CFD8DC;
-  }
+    width: 100%;
+    display: grid;
+    position: fixed;
+    z-index: 50;
+    margin-top: 13%;
+}
 
 
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
-  }
+
+
+.show-menu{
+    visibility:hidden;
+    background-color: white;}
+.show-menu a{
+  font-size: 16px;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+.show-menu button.signup2{
+    width: 120px;
+    margin-left: 10%;
+    font-size: 16px;
+    background-color: white;
+    border-color: #7372FF;
+    border-radius: 5px;
+    border-style: solid;
+    color: #4443D0;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.show-menu button.signin2{
+    width: 120px;
+    font-size: 16px;
+    margin-left: 10%;
+    background-color: #4443D0;
+    border-color: #7372FF;
+    border-radius: 5px;
+    border-style: solid;
+    color: white;
+    font-weight: 700;
+    margin-top: 10px;
+}
+ 
+
+
+
+
 
 
 
@@ -209,7 +178,7 @@ form{margin-left: 10%;}
 
 @media (max-width:1020px){
 .menu a{margin-right: 2%;}
-.menu h1{margin-right: 40%;}
+.menu h1{margin-right: 35%;}
 }
 
 @media (max-width:940px){
@@ -221,25 +190,43 @@ form{margin-left: 10%;}
 .menu h1{margin-right: 25%;}
 .menu a{font-size: 12px;}
 .menu button{font-size: 10px;}
+h1.make{font-size: 58px;}
 }
 
 @media (max-width:720px){
 .menu h1{margin-right: 20%;}
 h1.make{font-size: 48px;}
+h1.make {padding-top: 20%;}
 p.text{font-size: 18px;}
 p.join{font-size:14px}
 }
 
 @media (max-width:680px){
-.menu button{font-size: 8px;}
+.menu button{font-size: 9px;}
+
 }
 
 @media (max-width:649px){
-    .menu a{visibility: hidden;}
-    .menu button.signup{visibility: hidden;}
-    .menu button.signin{visibility: hidden;}
-    .hamburger{
-        visibility: visible;
+    .show-menu{visibility: visible;}
+    .burger{visibility:visible;}
+    .menu{width: 100%;
+    margin-left: 0;
+    border-radius: 0;}
+    .menu h1{margin-left: 10%;}
+    .menu a{display: none;}
+    .menu button.signup{display: none;}
+    .menu button.signin{display: none;}
+    .burger{
+        display: block;
     }
-     
 }
+
+@media (max-width:580px){
+  .burger{
+      display: block;
+  }
+   
+}
+
+
+
